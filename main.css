@@ -8,17 +8,12 @@ body {
     height: 100%;
   }
 
-.nav-title{
-    color: #FA7070;
-}
+
 
 .buttons {
     margin-top: 20px;
 }
 
-nav{
-    background-color: #FFBF9B;
-}
 
 
 
@@ -31,7 +26,6 @@ nav{
 }
 
 .jumbotron {
-    background-color: transparent;
     background-color: #FFBF9B;
     height: 100%;
     text-align: center;
@@ -66,3 +60,24 @@ nav{
     from, to { border-color: transparent }
     50% { border-color: #B46060; }
   }
+
+
+.btn-light {
+    color: #B46060;
+    background: transparent;
+    border-color: #B46060;
+    margin: 2px;
+    
+}
+
+.btn-light:hover {
+    color: #FFF4E0;
+    background-color:  #B46060;
+    border-color: #FFF4E0;
+}
+
+.btn-light:focus-visible {
+    color: #FFF4E0;
+    background-color:  #B46060;
+    border-color: #FFF4E0;
+}
