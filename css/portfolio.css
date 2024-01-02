@@ -1,0 +1,10 @@
+.portfolio{
+    padding: 2%;
+}
+
+.portfolio-item{
+    background-color: #FFBF9B;
+    padding: 2%;
+    border-radius: 25px;
+    margin: 5px;
+}

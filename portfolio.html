@@ -7,6 +7,7 @@
       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="css/setup.css">
+        <link rel="stylesheet" href="css/portfolio.css">
     
 	<body>
       <nav class="navbar navbar-expand navbar-dark navbar-custom sticky-top" role="navigation" id="navbar">
@@ -19,6 +20,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item nav-page">
+                    <a class="nav-link" href="index.html">Home</span></a>
+                </li>
+                <li class="nav-item nav-page">
                     <a class="nav-link" href="about.html">About</span></a>
                 </li>
                 <li class="nav-item active nav-page">
@@ -27,12 +31,82 @@
             </ul>
         </div>
       </nav>
-      <div class="intro">
-        <div class="container">
-                <p class="lead">
-                   Coming soon...
-                </p>
-            </div>
+      <div class="portfolio">
+        <div class="portfolio-item">
+            <h3>Predicting Parkinson&#39;s Disease Using Gait Data</h3>
+            <h6>Oct 2023 - Dec 2023</h6>
+            <p>
+                •	Implemented feature engineering to calculate stride length, stride time, and swing time to effectively capture characteristics of ‘Parkinsonian gait’ and obtain a baseline accuracy of 74.68% using logistic regression <br>
+                •	Conducted feature selection to assess feature importance, and used scikit-learn to create supervised, unsupervised, and deep learning models to achieve the highest accuracy of 88% with an LSTM with attention, given that the input data was temporal <br>
+                •	Experimented with transfer learning by using this LSTM on smaller datasets for other neurodegenerative diseases like ALS <br>
+                <img src="images/pd-results.jpg" width="300px" alt="accuracies for supervised, unsupervised and deep learning models"> <br>
+            </p>
+            <div class="btn btn-light">Python</div>
+            <div class="btn btn-light">Scikit-Learn</div>
+            <div class="btn btn-light">Pandas</div>
+        <!-- <p>I worked with two students to create models for predicting PD and use the best performing model for transfer learning onto more sparse datasets for other neurodegenerative diseases. <br>
+        Input data: <a href="https://physionet.org/content/gaitpdb/1.0.0/#files-panel">https://physionet.org/content/gaitpdb/1.0.0/#files-panel</a><br>
+        We engineered features from the raw data such as stride length and double support time. We then explored supervised and unsupervised learning methods using the sklearn package. 
+        <img src="images/pd-results.jpg" width="300px" alt="accuracies for supervised, unsupervised and deep learning models"> <br>
+        Unsurprisingly, supervised learning models performed better than unsupervised models.  -->
+
+        </div>
+        <div class="portfolio-item">
+            <h3>Automatic Resolution Selection for Hi-C Data</h3>
+            <h6>Sep 2019 - Jun 2021</h6>
+            <p>
+                •	Remodeled a Python tool that automatically selected an appropriate fixed-width bin size for a given set of Hi-C reads by calculating SSEs between original and binned reads for different resolutions <br>
+                •	Explored open-source loop-calling scripts including OnTAD to verify the accuracy of the code in selecting a bin size that conserved genomic features like chromatin loops 
+            </p>
+            <div class="btn btn-light">Python</div>
+            <div class="btn btn-light">Cloud computing</div>
+            <div class="btn btn-light">Computational biology</div>
+        </div>
+        <div class="portfolio-item">
+            <h3>EyeWise: Endocrinologist in your Pocket</h3>
+            <h6>Sep 2023 - Dec 2023</h6>
+            <p>
+                •	Carried out the need finding process by interviewing clinicians to identify gaps in the diabetes market, including the lack of education provided to people with prediabetes on complications like retinopathy, and patient noncompliance <br>
+                •	Formalized a business model for a LLM chatbot that provides users with personalized recommendations for their diabetes journey and streamlines the appointment making process, and calculated a total addressable market of $317 million
+            </p>
+            <div class="btn btn-light">Biodesign</div>
+            <div class="btn btn-light">Human-computer interaction</div>
+        </div>
+        <div class="portfolio-item">
+            <h3>Video Game Style Transfer</h3>
+            <h6>Apr 2021</h6>
+            <p>
+                •	Investigated, along with three other students, style transfer by transferring video game styles onto landscape, city, and animal images using a convolutional neural network <br>
+                •	Referenced papers on style transfer from paintings onto images, and employed a version of the VGG19 model by utilizing max pooling layers to capture more extreme edge and texture information common in video game styles <br>
+                •	Carried out hypothesis testing to determine how to best optimize output by using different input images and style weights      
+            </p>
+            <div class="btn btn-light">Python</div>
+            <div class="btn btn-light">Keras</div>
+        </div>
+        <div class="portfolio-item">
+            <h3>Exploring the Role of Computer Science in Cancer Research</h3>
+            <h6>Jan 2020 - Dec 2020</h6>
+            <p>
+                •	Visualized glioblastomas from MRI scans in UPenn’s BraTS dataset by segmenting the tumors and brain tissue in Slicer and exporting the models to Paraview and Unity before viewing them in virtual reality in the YURT, Brown’s virtual reality lab <br>
+                •	Developed a syllabus for an independent study, under the guidance of Professor Sorin Istrail, to continue research into how computer science, particularly machine learning, has been used in cancer detection and treatment
+            </p>
+            <div class="btn btn-light">Paraview</div>
+            <div class="btn btn-light">Unity</div>
+            <div class="btn btn-light">Slicer</div>
+        </div>
+        <div class="portfolio-item">
+           <h3>The Hidden Power of Period Planning</h3> 
+           <h6>Feb 2020 - May 2020</h6>
+           <p>
+                •	Built a mobile application aimed to be a resource for victims of sexual assault to document any encounters while being disguised as a period-tracking app <br>
+                •	Acted as a full-stack engineer in a group with three other students to fulfill a client’s objectives using JavaScript frameworks such as Node.js, and MongoDB to store user information
+           </p>
+           <div class="btn btn-light">Nativescript</div>
+           <div class="btn btn-light">Vue.js</div>
+           <div class="btn btn-light">Node.js</div>
+           <div class="btn btn-light">HTML</div>
+           <div class="btn btn-light">CSS</div>
+           <div class="btn btn-light">SQL</div>
         </div>
       </div>
 	</body>
